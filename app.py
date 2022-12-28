@@ -15,5 +15,6 @@ def hello_world():
         return "%s - %s" % (json.loads(f.read()).get("payload"), datetime.datetime.now().strftime("%d.%m.%Y %H:%M:%S"))
 
 
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080, debug=True)
